@@ -38,13 +38,38 @@
 // names.push("Noah")
 // console.log(names)
 //-----ARRAY COM OUTRA SINTAXE
-const numeros = [10, 230, 4084, 48];
-console.log(numeros);
-const nums = [1, 2, 3, 4, 5];
-console.log(nums);
+// const numeros: number [] = [10, 230, 4084, 48]
+// console.log(numeros)
+// const nums: Array<number> = [1,2,3,4,5]
+// console.log(nums)
 // const numerosArray: Array<number> = [1,2,3,4,5]
 // const numerosArray2: number [] = [1,2,3,4,5]
-const nomeArray = ["Luan, Camila, Carol, Noah"];
-console.log(nomeArray);
-const nomeArray2 = ["Paulo", "John", "Matheus", "Camila"];
-console.log(nomeArray2);
+// const nomeArray: string [] = ["Luan, Camila, Carol, Noah"]  
+// console.log(nomeArray)
+// const nomeArray2: Array<String> = ["Paulo", "John", "Matheus","Camila"]
+// console.log(nomeArray2)
+// //-----RETORNO DA FUNÇÃO
+// function retornarNome(name: string){
+//     return name
+// }
+// console.log(retornarNome("Thiago"))
+//-- FUNÇÃO ANÔNIMA
+// let show = function (){
+//     console.log('Função anônima')
+// }
+// show()
+//-----FUNÇÃO ANÔNIMA COMO ARGUMENTO DE OUTRA FUNÇÃO COM TIMEOUT------------
+// setTimeout(function () {
+//     console.log('Executar depois de 1 segundo')
+// }, 1000)
+//------FUNÇÃO ANÔNIMA COM EXECUÇÃO INSTATÂNEA------------
+// (function(){
+//     console.log('EXECUTAR')
+// })()
+//------FUNÇÃO ANÔNIMA COM ARROW FUNCTION ------------
+let show = function () {
+    console.log('Função anônima');
+};
+show();
+let mostrar = () => console.log('Função anônima');
+mostrar();
