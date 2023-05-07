@@ -44,11 +44,25 @@
 // DESAFIO
 
 // CRIAR UMA VARIÁVEL QUE RECEBE UM NÚMERO
-let recebeNumero: number = 5
+//let recebeNumero: number = 5
 //CONVERTER ESSE NÚMERO PARA STRING EM UMA NOVA VARIÁVEL
-let numeroString = recebeNumero.toString()
-//IMPRIMIR ESTE NÚMERO EM UMA STRING MAIOR UTILIZANDO TEMPLATE OU CONCATENAÇÃO
-const printMyNumber: string = `O número é ${numeroString}`
+//let numeroString = recebeNumero.toString()
+//COLOCAR ESTE NÚMERO EM UMA STRING MAIOR UTILIZANDO TEMPLATE OU CONCATENAÇÃO
+//const printMyNumber: string = `O número é ${numeroString}`
+//IMPRIMIR O NÚMERO
+//console.log(printMyNumber)
 
-console.log(printMyNumber)
+//-----ARRAYS
+
+const numbers: number [] = [1, 2, 3, 4, 5, 6, 7, 8]
+
+numbers.push(9)
+
+console.log(numbers)
+
+const names: string [] = ["Thiago", "Camila"]
+
+names.push("Noah")
+
+console.log(names)
 
