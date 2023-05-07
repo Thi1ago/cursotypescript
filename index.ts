@@ -54,15 +54,34 @@
 
 //-----ARRAYS
 
-const numbers: number [] = [1, 2, 3, 4, 5, 6, 7, 8]
+// const numbers: number [] = [1, 2, 3, 4, 5, 6, 7, 8]
 
-numbers.push(9)
+// numbers.push(9)
 
-console.log(numbers)
+// console.log(numbers)
 
-const names: string [] = ["Thiago", "Camila"]
+// const names: string [] = ["Thiago", "Camila"]
 
-names.push("Noah")
+// names.push("Noah")
 
-console.log(names)
+// console.log(names)
 
+//-----ARRAY COM OUTRA SINTAXE
+
+const numeros: number [] = [10, 230, 4084, 48]
+
+console.log(numeros)
+
+const nums: Array<number> = [1,2,3,4,5]
+console.log(nums)
+
+// const numerosArray: Array<number> = [1,2,3,4,5]
+// const numerosArray2: number [] = [1,2,3,4,5]
+
+const nomeArray: string [] = ["Luan, Camila, Carol, Noah"]  
+
+console.log(nomeArray)
+
+const nomeArray2: Array<String> = ["Paulo", "John", "Matheus","Camila"]
+
+console.log(nomeArray2)

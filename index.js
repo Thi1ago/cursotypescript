@@ -31,9 +31,20 @@
 //IMPRIMIR O NÚMERO
 //console.log(printMyNumber)
 //-----ARRAYS
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-numbers.push(9);
-console.log(numbers);
-const names = ["Thiago", "Camila"];
-names.push("Noah");
-console.log(names);
+// const numbers: number [] = [1, 2, 3, 4, 5, 6, 7, 8]
+// numbers.push(9)
+// console.log(numbers)
+// const names: string [] = ["Thiago", "Camila"]
+// names.push("Noah")
+// console.log(names)
+//-----ARRAY COM OUTRA SINTAXE
+const numeros = [10, 230, 4084, 48];
+console.log(numeros);
+const nums = [1, 2, 3, 4, 5];
+console.log(nums);
+// const numerosArray: Array<number> = [1,2,3,4,5]
+// const numerosArray2: number [] = [1,2,3,4,5]
+const nomeArray = ["Luan, Camila, Carol, Noah"];
+console.log(nomeArray);
+const nomeArray2 = ["Paulo", "John", "Matheus", "Camila"];
+console.log(nomeArray2);
