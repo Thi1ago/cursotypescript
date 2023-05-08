@@ -118,13 +118,37 @@
 
 //------FUNÇÃO ANÔNIMA COM ARROW FUNCTION ------------
 
-let show = function (){
-    console.log('Função anônima')
+// let show = function (){
+//     console.log('Função anônima')
+// }
+
+// show()
+
+
+// let mostrar = () => console.log('Função anônima')
+
+// mostrar()
+
+
+//-----TIPOS DE OBJETOS
+
+function passCordinates(coord: {x: number, y: number}){
+    console.log("x coordinates:" + coord.x)
+    console.log("y coordinates:" + coord.y)
 }
 
-show()
+const objCoord = {x: 398, y: 65.8}
 
+passCordinates(objCoord)
 
-let mostrar = () => console.log('Função anônima')
+//----PROPRIEDADES OPCIONAIS
 
-mostrar()
+function showNumbers(a: number, b: number, c?: number)
+{
+    console.log("A:" +a)
+    console.log("B:" +b)
+    console.log("C:" +c)
+}
+
+showNumbers(1,2,3)
+showNumbers(1,2)

@@ -67,9 +67,24 @@
 //     console.log('EXECUTAR')
 // })()
 //------FUNÇÃO ANÔNIMA COM ARROW FUNCTION ------------
-let show = function () {
-    console.log('Função anônima');
-};
-show();
-let mostrar = () => console.log('Função anônima');
-mostrar();
+// let show = function (){
+//     console.log('Função anônima')
+// }
+// show()
+// let mostrar = () => console.log('Função anônima')
+// mostrar()
+//-----TIPOS DE OBJETOS
+function passCordinates(coord) {
+    console.log("x coordinates:" + coord.x);
+    console.log("y coordinates:" + coord.y);
+}
+const objCoord = { x: 398, y: 65.8 };
+passCordinates(objCoord);
+//----PROPRIEDADES OPCIONAIS
+function showNumbers(a, b, c) {
+    console.log("A:" + a);
+    console.log("B:" + b);
+    console.log("C:" + c);
+}
+showNumbers(1, 2, 3);
+showNumbers(1, 2);
