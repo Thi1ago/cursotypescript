@@ -88,3 +88,37 @@ function showNumbers(a, b, c) {
 }
 showNumbers(1, 2, 3);
 showNumbers(1, 2);
+// VALIDANDO ARGUMENTO OPCIONAL
+function advancedGreeting(firstName, lastName) {
+    if (lastName !== undefined) {
+        return `Olá, ${firstName} ${lastName}, tudo bem?`;
+    }
+    return `Olá, ${firstName}, tudo bem?`;
+}
+console.log(advancedGreeting("Thiago"));
+// UNION TYPE
+function showBalance(balance) {
+    console.log(`O saldo da conta é R$${balance}`);
+}
+showBalance(100);
+showBalance("500");
+showBalance(true);
+// AVANÇANDO EM UNION TYPES
+function showUserRole(role) {
+    if (typeof role === "boolean") {
+        return "Usuário não aprovado!";
+    }
+    return `A função dó usuário é: ${role}`;
+}
+console.log(showUserRole(false));
+function showId(id) {
+    console.log(`O ID É: ${id}`);
+}
+showId("123");
+showId(1);
+showId(2);
+function showUser(user) {
+    console.log(`O nome é: ${user.name}`);
+    console.log(`A idade é: ${user.age}`);
+}
+showUser({ name: "Thiago", age: 25 });

@@ -152,3 +152,65 @@ function showNumbers(a: number, b: number, c?: number)
 
 showNumbers(1,2,3)
 showNumbers(1,2)
+
+// VALIDANDO ARGUMENTO OPCIONAL
+
+function advancedGreeting(firstName: string, lastName?: string){
+
+    if(lastName !== undefined){
+        return `Olá, ${firstName} ${lastName}, tudo bem?` 
+    }
+
+    return `Olá, ${firstName}, tudo bem?`
+}
+
+console.log(advancedGreeting("Thiago"))
+
+// UNION TYPE
+
+function showBalance(balance: string | number | boolean){
+    console.log(`O saldo da conta é R$${balance}`)
+}
+
+showBalance(100)
+showBalance("500")
+showBalance(true)
+
+// AVANÇANDO EM UNION TYPES
+
+function showUserRole(role: boolean | string){
+    if(typeof role === "boolean") {
+        return "Usuário não aprovado!"
+    }   
+
+    return `A função dó usuário é: ${role}`
+}
+
+console.log(showUserRole(false))
+
+
+// Type Alias
+
+type ID = string | number
+
+function showId(id: ID){
+    console.log(`O ID É: ${id}`)
+}
+
+showId("123")
+showId(1)
+showId(2)
+
+// Interface
+
+interface User{
+    name: string;   
+    age: number;
+}
+
+function showUser(user: User){
+    console.log(`O nome é: ${user.name}`)
+    console.log(`A idade é: ${user.age}`)
+}
+
+showUser({name: "Thiago", age: 25})
