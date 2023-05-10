@@ -122,3 +122,11 @@ function showUser(user) {
     console.log(`A idade é: ${user.age}`);
 }
 showUser({ name: "Thiago", age: 25 });
+const somePerson = { name: "Thiago", age: 20 };
+console.log(somePerson);
+// literal types
+let teste;
+function showDirection(direction) {
+    return `A direção é: ${direction}`;
+}
+console.log(showDirection("direita"));

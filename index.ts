@@ -214,3 +214,28 @@ function showUser(user: User){
 }
 
 showUser({name: "Thiago", age: 25})
+
+// interface x type alias 
+
+interface Person {
+    name: string
+}
+
+interface Person {
+    age: number
+}
+
+const somePerson: Person = {name: "Thiago", age: 20}
+
+console.log(somePerson) 
+
+// literal types
+
+let teste: "teste"
+
+function showDirection (direction: "esquerda" | "direita" | "meio"){
+    return `A direção é: ${direction}`
+}
+
+console.log(showDirection("direita"));
+
